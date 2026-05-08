@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b;
+}
+.container{
+    text-align: center;
+}
+h1{
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+.status{
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #64748b;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cell{
+    width: 120px;
+    height: 120px;
+    background: rgba(200, 199, 199, 0.766);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.cell:hover{
+    background: rgba(105, 101, 101, 0.715);
+}
+.x{
+    color: #ff9f43;
+}
+.o{
+    color: #4da3ff;
+}
+button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(
+        135deg,
+        #4da3ff,
+        #2563eb
+    );
+}
+button:hover{
+    transform: scale(1.05);
+}
+.winner{
+    background: #bbf7d0 !important;
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px rgba(34,197,94,0.4);
+}
